@@ -1891,8 +1891,8 @@ ItemUsePokedoll:
 	jp nz, ItemUseNotTime
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 	;joenote - if this is a ghost marowak battle, prevent using a pokedoll
-	CheckEvent EVENT_10E
-	jp nz, ItemUseNotTime
+	;CheckEvent EVENT_10E
+	;jp nz, ItemUseNotTime
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 	ld a, $01
 	ld [wEscapedFromBattle], a
